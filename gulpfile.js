@@ -6,6 +6,8 @@ const serve = require('gulp-serve');
 const { exec } = require('child_process');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+//const concat = require('gulp-concat');
+//const uglify = require('gulp-uglify');
 
 gulp.task('build', function (cb) {
   exec('ng build', function (err, stdout, stderr) {
